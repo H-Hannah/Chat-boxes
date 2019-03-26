@@ -59,7 +59,7 @@ class WriteToServerThread implements Runnable{
                     strToServer = in.nextLine().trim();
                     out.println(strToServer);
                     //4、客户端主动退出时要告诉服务器，定退出标志为886
-                    if (strToServer.equals("886")){
+                    if (strToServer.equals("byebye")){
                         System.out.println("关闭客户端");
                         in.close();
                         out.close();
