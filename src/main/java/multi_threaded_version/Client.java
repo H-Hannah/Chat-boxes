@@ -37,7 +37,6 @@ class ReadFromServerThread implements Runnable{
     }
 }
 
-
 //将信息发送给服务器线程 WriteToServerThread
 class WriteToServerThread implements Runnable{
     private Socket client;

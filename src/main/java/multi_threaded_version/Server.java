@@ -64,6 +64,7 @@ public class Server {
                                     userName = keyName;
                                 }
                             }
+
                             System.out.println("用户："+userName+"下线了！");
                             clientMap.remove(userName);
                             continue;
@@ -90,7 +91,7 @@ public class Server {
            }
        }
 
-       ///6、聊流程
+       ///6、群聊流程
        private void groupChat(String msg){
             //取出clientMap中所有Entry遍历发送群聊消息
            Set<Map.Entry<String,Socket>> clientSet = clientMap.entrySet();
